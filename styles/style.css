@@ -30,11 +30,11 @@ right: 0px;
 }
 .logo{
 width: 183px;
-height: 32px;
 }
 .logo_place_header{
 position: absolute;
 z-index: 2;
+height: 32px;
 left: 64px;
 top: 30px;
 }
@@ -47,7 +47,7 @@ font-size: 102px;
 font-weight: 700;
 z-index: 3;
 }
-.header__subtitle { 
+.header__subtitle {
 position: absolute;
 left: 64px;
 bottom: 30px;
@@ -137,10 +137,13 @@ flex-wrap: wrap;
 justify-content: space-between;
 width: 1100px;
 bottom: 100px;
+padding: 0;
 }
 .table__cell {
 width: 250px;
 list-style: none;
+z-index: 2;
+
 }
 .table__heading {
 line-height: 1.15;
@@ -154,9 +157,6 @@ font-size: 18px;
 font-weight: 400;
 margin: 0 0 20px 0;
 }
-.table__text-last {
-margin: 0;
-}
 
 /*feynman*/
 .feynman {
@@ -169,6 +169,10 @@ min-width: 1100px;
 max-width: 1600px;
 background-color: #f2f2f2;
 margin: 100px auto 0 auto;
+background-image: url(../images/feynman.png);
+background-size: 867px 637px;
+background-position: bottom left;
+background-repeat: no-repeat;
 }
 .feynman__title {
 width: 648px;
@@ -176,8 +180,9 @@ line-height: 1.15;
 font-size: 120px;
 font-weight: 700;
 text-align: center;
-z-index: 1;
+z-index: 2;
 margin: 100px 0 70px 0;
+padding: 0;
 }
 .feynman__subtitle {
 line-height: 51px;
@@ -215,11 +220,13 @@ min-width: 1100px;
 max-width: 1600px;
 margin: 0 auto;
 background-color: #1f1f1f;
-overflow: hidden; 
+overflow: hidden;
 
 }
 .section-title_theme_dark {
 color: #ffffff;
+width: 100%;
+z-index: 2;
 margin-top: 90px;
 
 }
@@ -231,10 +238,10 @@ margin-top: 20px;
 .table_theme_dark {
 padding-bottom: 90px;
 margin: auto;
-z-index: 1;
 }
 .table__cell_theme_dark {
 width: 200px;
+
 
 }
 .table__heading_theme_dark {
@@ -254,6 +261,7 @@ height: 877px;
 position: absolute;
 top:0px;
 right: -210px;
+z-index: 1;
 }
 
 /*footer*/
@@ -266,20 +274,20 @@ margin: 0 auto;
 background-color: #1f1f1f;
 min-height: 350px;
 }
-.footer__columns {
+.footer__column {
 display: flex;
 justify-content: space-between;
 margin-top: 60px;
 width: 90%;
 margin-bottom: 40px;
 }
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 flex-basis: 711px;
 }
-.footer__columns_content_info {
+.footer__column_content_info {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -288,7 +296,7 @@ width: 25%;
 margin-top: 0;
 margin-bottom: 20px;
 }
-.footer__columns_content_social {
+.footer__column_content_social {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -323,4 +331,10 @@ text-decoration: none;
 .footer__social-icon {
 width: 16px;
 height: 16px;
+}
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 35px;
 }
