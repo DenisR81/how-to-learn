@@ -13,7 +13,6 @@
 .header {
 display: flex;
 position: relative;
-align-items: center;
 height: 100vh;
 min-height: 600px;
 max-height: 756px;
@@ -39,8 +38,8 @@ left: 64px;
 top: 30px;
 }
 .header__title {
-position: absolute;
-left: 64px;
+align-self: center;
+padding-left: 64px;
 max-width: 730px;
 line-height: 96px;
 font-size: 102px;
