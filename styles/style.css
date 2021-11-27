@@ -67,10 +67,11 @@ width: 756px;
 height: 608px;
 z-index: 1;
 }
-/*.header__link{
-text-decoration: none;
-color:#2f80ed;
-}*/
+.header__link{
+line-height: 25px;
+font-size: 18px;
+font-weight: 400;
+}
 
 /*description*/
 .description{
