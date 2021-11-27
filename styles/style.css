@@ -67,10 +67,10 @@ width: 756px;
 height: 608px;
 z-index: 1;
 }
-.header__link{
+/*.header__link{
 text-decoration: none;
 color:#2f80ed;
-}
+}*/
 
 /*description*/
 .description{
@@ -199,8 +199,6 @@ z-index: 2;
 line-height: 51px;
 font-size: 36px;
 font-weight: 400;
-text-decoration: none;
-color:#2f80ed;
 position: absolute;
 right: 48px;
 top:50%;
@@ -314,7 +312,6 @@ flex-direction: column;
 line-height: 30px;
 font-size: 18px;
 font-weight: 400;
-color: #ffffff;
 list-style: none;
 padding-bottom: 16px;
 padding-left: 0;
@@ -330,16 +327,13 @@ background-image: url(../images/logo_place_footer.svg);
 background-repeat: no-repeat;
 height: 35px;
 }
-a:link {
+.link {
 text-decoration: none;
 color:#2f80ed;
 }
-a:visited {
-color: #a766ff;
-}
-a:hover {
+.link:hover {
 color: #ff0000;
 }
-a:active{
-color: #6B8E23;
+.footer__column-link {
+color: #ffffff;
 }
